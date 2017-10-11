@@ -1,0 +1,104 @@
+#the{
+	font-size: 50px;
+	text-align: center;
+	padding: auto;
+	margin-top: 50px;
+	color: red;
+	margin-bottom: 0px;
+	font-family: Lucida;
+	font-style: italic;
+
+}
+
+#rred{
+	font-size: 30px;
+	text-align: center;
+	padding: auto;
+	margin-top: 0px;
+	margin-bottom: -30px;
+	color: red;
+}
+
+
+
+.titlee{
+	color:red;
+	position: relative;
+	margin: center;
+	font-size: 20px;
+    padding: auto;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+
+}
+#square {
+
+	width: 50px;
+	height:50px;
+	position: relative;
+	/*background:blue;*/
+}
+
+#square1 {
+	width: 50px;
+	height:50px;
+	position: relative;
+	background:orange;
+}
+
+#btn{
+	margin-left: 537px;
+	background-color: red;
+	border:none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	padding:12px 70px; 
+
+}
+#btn:hover{
+	background-color: #243134;
+}
+
+#btn:active{
+	background-color: #134361;
+}
+#goright{
+	margin-left: 20px;
+	margin-top:105px;
+	background-color: #243134;
+	border:none;
+	color: red;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	padding:8px 17px; 
+}
+#goright:hover {
+	background-color:#134361;
+}
+
+#goright:active{
+	background-color:white;
+}
+#godown{
+	margin-left:400px;
+	margin-top:100px;
+	background-color: #243134;
+	border:none;
+	color: red;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	padding:8px 17px; 
+
+}
+#godown:hover {
+	background-color:#134361;
+}
+
+#godown:active{
+	background-color:white;
+}

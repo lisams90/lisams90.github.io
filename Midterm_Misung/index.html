@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+	<title>Javascript</title>
+</head>
+<marquee direction="down" behavior="alternate" height="120" scrollAmount="2" >
+<h2 id='the'>The</h2>
+</marquee>
+<h2 id='rred'>Red's Journey</h2>
+<body id="bg" style='background-color: #863453'>
+   
+ <div class="container" style='width:950px;height:236px;background-color: red;color:white;margin:auto; margin-top: 50px'>
+    <div id="square"><img src="./image/leftright.gif" style="width: 190px;height: auto;margin-left:190px;"></div>
+    <div id="square1"><img src="https://media.giphy.com/media/l0MYPh8gSCntZTsdO/giphy.gif" style="width:190px;height:auto;"></div>
+   
+    <input type="button" id='godown' value="Down" onclick="moveDown();">
+     <input type="button" id='goright' value="Right" onclick="moveRight();">
+    </div>
+
+
+<h1 class='titlee'>Let's move!</h1>
+<button id="btn" onclick='generate()'>Change</button>
+
+
+<script src='jquery-3.2.1.js'></script>
+<script src='tracery.js'></script>
+<script type="text/javascript" src="js/script.js"></script>
+
+<script>
+
+
+var cocolors =['74','41','683','66','52'];
+var ran=function(){
+	return Math.floor(Math.random()*2);
+};
+var randomColors =function(){
+	var r = cocolors[ran()];
+	var g =cocolors[ran()];
+	var b =cocolors[ran()];
+	return "#"+r+g+b;
+
+
+}
+
+var tellme = {
+	'colorr' : ['Red wants to #activity# by moving #squa# #sec#'],
+	'activity' : ['change his color', 'go home', 'dance', 'roll around', 'scream'],
+	'squa' : ['Misung', 'a strange man', 'image', 'square'],
+	'sec' : ['1 sec', '5 mins', 'everyday', '888 hours']
+
+
+}
+
+var grammar = tracery.createGrammar(tellme)
+function generate(){
+	var t = grammar.flatten('#colorr#')
+	$('h1').text(t)
+
+	$(".container").each(function(){
+		$(this).css('background',randomColors());
+	});
+	$("#bg").each(function(){
+		$(this).css('background',randomColors());
+	});
+
+	
+}
+
+
+
+
+</script>
+</body>
+</html>
