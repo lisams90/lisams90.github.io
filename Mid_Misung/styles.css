@@ -1,0 +1,83 @@
+
+
+.titlee{
+	color:tomato;
+
+	
+	position: relative;
+	margin: center;
+	font-size: 22px;
+    padding: auto;
+    text-align: center;
+
+}
+#square {
+
+	width: 50px;
+	height:50px;
+	position: relative;
+	background:blue;
+}
+
+#square1 {
+	width: 50px;
+	height:50px;
+	position: relative;
+	background:orange;
+}
+
+#btn{
+	margin-left: 580px;
+	background-color: tomato;
+	border:none;
+	color: white;
+	text-align: center;
+	text-decoration: none;
+	font-size: 14px;
+	padding:10px 20px; 
+
+}
+#btn:hover{
+	background-color: #243134;
+}
+
+#btn:active{
+	background-color: #134361;
+}
+#goright{
+	margin-left: 40px;
+	margin-top:100px;
+	background-color: white;
+	border:none;
+	color: tomato;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	padding:8px 17px; 
+}
+#goright:hover {
+	background-color:#243134;
+}
+
+#goright:active{
+	background-color:#134361;
+}
+#godown{
+	margin-left:320px;
+	margin-top:100px;
+	background-color: white;
+	border:none;
+	color: tomato;
+	text-align: center;
+	text-decoration: none;
+	font-size: 12px;
+	padding:8px 17px; 
+
+}
+#godown:hover {
+	background-color:#243134;
+}
+
+#godown:active{
+	background-color:#134361;
+}
