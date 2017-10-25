@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0>
+    <style> body {padding: 0; margin: 0;} </style>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,500" rel="stylesheet"> 
+    <script src="../p5.min.js"></script>
+    <script src="../addons/p5.dom.min.js"></script>
+    <script src="../addons/p5.sound.min.js"></script>
+    <script src="sketch.js"></script>
+        <script src="pumpkin.js"></script>
+ 
+
+  </head>
+  <body>
+  <div>
+<h2>Let's eat fresh produces!</h2>
+<button onclick="myFunction()">Put your name</button>
+<p id="demo"></p>
+</div>
+<script>
+  function myFunction() {
+    var txt;
+    var person = prompt("Please enter your name:", "Lovely Misung");
+    if (person == null || person == "") {
+        txt = "User cancelled the prompt.";
+    } else {
+        txt = "Hello " + person + "! Let's have fun with veggies! <br>Press s for bgm<br>Mouse click for showing veggies";
+    }
+    document.getElementById("demo").innerHTML = txt;
+}
+
+</script>
+<style>
+div{
+  position: absolute;
+  top:20px;
+  left: 10px;
+}
+button{
+  background: #253273;
+  color: #fff;
+  outline: none;
+  text-transform: uppercase;
+  -webkit-border-radius:8px;
+  padding:1.2em;
+  overflow: hidden;
+  border:none;
+  letter-spacing: 0.1em;
+  margin: 0.5em 0;
+  font-weight: bold;
+  
+
+}
+h2{
+font-family: 'Quicksand', sans-serif;}
+</style>
+  </body>
+</html>
