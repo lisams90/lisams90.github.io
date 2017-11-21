@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SoundCloud API Streaming Demo</title>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://w.soundcloud.com/player/api.js"></script>
+    <script src="soundcloud.js"></script>
+    <link rel='stylesheet' href='style.css'/>
+
+  </head>
+  <body>
+
+    <div class='container'>
+      <div class='row'>
+        <div class='contents'>
+          <img src='no-sc-artwork.png' id='thumbnail' alt='Album artwork'/><br>
+        </div>
+        <div class='contents'>
+          <h2 id="song_title">Loading Song…</h2>
+          <h3 id='song_artist'>Loading Artist…</h3>
+          <div class='row'>
+            <button class="btn" id='play'><i  aria-hidden="true"></i>PLAY</button>
+          </div>
+          <div class='row'>
+            <button class="btn" id='pause'><i aria-hidden="true"></i>PAUSE</button>
+          </div>
+          <div class='row'>
+            <button class="btn" id='newSong'><i aria-hidden="true"></i> CHANGE SONG</button>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id='player'>
+      <iframe id="so" width="100%" height="160" scrolling="no" frameborder="0">Loading</iframe>
+    </div>
+    
+    
+  </body>
+</html>
