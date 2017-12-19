@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Water your veggie</title>
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" href="css/style.css">
+  <!-- <script language="javascript" type="text/javascript" src="libraries/p5.js"></script>
+  <script language="javascript" src="libraries/p5.dom.js"></script>
+  <script language="javascript" src="libraries/p5.sound.js"></script> -->
+
+  
+</head>
+
+<body>
+<h1 id='ab'> Hint :  you'll need 80% of water</h1>
+  <div class="wrapper">
+		<div class="ww">
+			
+			<div class="frame">
+				<div class="wtwt-checker">
+					<div class='walign one'>
+					  <div id="wwater" class='wwater'>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					  </div>
+					</div>
+					<div class='walign two'>
+					  <div id="wwater" class='wwater'>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					  </div>
+					</div>
+					<div class='walign three'>
+					  <div id="wwater" class='wwater'>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					  </div>
+					</div>
+					<div class='walign four'>
+					  <div class='wwater'>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					  </div>
+					</div>
+					<div class='walign five'>
+					  <div class='wwater'>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='wtwt'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					    <div class='waterdrop'></div>
+					  </div>
+					</div>
+				</div>
+				<div class="knobs">
+					<div class="knob-wrapper">
+						<div class="dots">
+							<div class='line'><span class="bigdot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="bigdot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="smalldot"></span></div>
+							<div class='line'><span class="bigdot"></span></div>
+						</div>
+						<div id="knob" class="knob"></div>
+					</div>
+					<div class="knob-wrapper mini">
+						<div class="dots2">
+							<div class='line2'><span class="bigdot"></span></div>
+							<div class='line2'><span class="bigdot"></span></div>
+						</div>
+						<div id="knob2" class="knob"></div>
+					</div>
+				</div>
+				<div class="case">
+					<div class="screen" id='watering'><p>Current water<br>amount is<br></p>
+						<div id="temp" class="Water">50</div>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+
+	<img class='vegpos' id='veggies' src='' />
+	<img class='vegpos' id='veggies1' src='' />
+	<img class='vegpos' id='veggies2' src='' />
+	<img class='vegpos' id='veggies3' src='' />
+
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+
+    <script  src="js/index.js"></script>
+
+</body>
+</html>

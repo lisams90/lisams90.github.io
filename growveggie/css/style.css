@@ -1,0 +1,261 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+
+/*#loading {
+ width: 100%;  
+ height: 100%;  
+ top: 0px;
+ left: 0px;
+ position: fixed;  
+ display: block;  
+ opacity: 1;  
+ background-color: #fff;  
+ z-index: 99;  
+ text-align: center; } 
+  
+#loading-image {  
+ position: absolute;  
+ top: 30%;  
+ left: 30%; 
+ z-index: 100; }
+
+
+
+
+*/
+#drop-zone {
+  /*z-index: 600;*/
+  position: absolute;
+  top: 70%;
+  left: 62%; /*여기서 put here 글자 위치 변*/
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 150px;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  z-index: 600;
+}
+#canvas {
+  display: block;
+}
+body {
+  background-image: url("bg.png");
+  background-repeat: no-repeat;
+  background-size: auto;
+    color: #fff;
+  font-size: 24px;
+  letter-spacing: 0.5px;
+  font-family: 'Press Start 2P';
+  line-height: 1.4;
+  padding: 10px;
+
+}
+h1{
+  margin-left: 230px;
+  margin-top: 20px;
+}
+
+#ab{
+  font-size: 16px;
+  margin-left: 230px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 50em;
+  animation: type 4s steps(60, end); 
+}
+#ab:nth-child(2){
+  animation: type2 8s steps(60, end);
+}
+
+#ab a{
+  color: white;
+  text-decoration: none;
+}
+
+span{
+  animation: blink 1s infinite;
+}
+
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
+@keyframes type2{
+  0%{width: 0;}
+  50%{width: 0;}
+  100%{ width: 100; } 
+} 
+
+@keyframes blink{
+  to{opacity: .0;}
+}
+
+
+
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 800px;
+  margin: 0 auto;
+
+}
+
+.plant-drawer {
+  padding: 10px 0;
+  width: 0%;
+  
+  margin-right: 0px;
+  margin-left: 0px;
+  /*margin-bottom: 0px;*/
+  display: -webkit-box;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  position: relative;
+  left: -80%;
+  -webkit-transition: 2s all;
+  transition: 2s all;
+}
+
+.plant-drawer.open {
+  left: 0;
+  width: 100%;
+  margin-right: 30px;
+}
+
+.plant-drawer div {
+  width: 45%;
+  top:30%;
+  text-align: center;
+  min-height: 100px;
+  position: relative;
+}
+
+.plant-drawer div.small .succulent {
+  width: 70%;
+  /*height: 40%;*/
+}
+
+.plant-drawer p {
+  font-size: 13px;
+  position: absolute;
+  /*margin-left: 0px;*/
+  left: 0%;
+  top:26%;
+  width: 500px;
+  z-index: 10;
+  margin-top: 50px;
+}
+
+.succulent {
+  position: absolute; 
+  bottom: 3px;
+  left: 40%;
+  top:23%; /*식물들 높이 */
+  /*margin:0px;*/
+  /*padding:0px;*/
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  max-height: 70%;
+  max-width: 70%;
+  opacity: 0.9;
+  z-index: 20;
+}
+
+.succulent:hover {
+  cursor: -webkit-grab;
+  cursor: grab;
+  opacity: 1;
+}
+
+.terrarium-container {
+  left: 20%;
+  width: 80%;
+  position: relative;
+  /*min-height: 76vh;*/
+}
+
+.terrarium-container.shrink {
+  width: 60%;
+}
+
+.terr-wrap {
+  position: absolute;
+  width: 60%;
+  bottom:-30%;
+  -webkit-transition: 1s all;
+  transition: 1s all;
+}
+
+.terr-wrap .soil,
+.terr-wrap .frame {
+  width: 100%;
+}
+
+.terr-wrap .succulent {
+  z-index: 20;
+  -webkit-transform: scale(0.6); 
+          transform: scale(0.6);
+}
+
+
+.terr-wrap:hover {
+  width: 62%;
+  cursor: pointer;
+}
+
+
+.terr-wrap:first-child {
+  left: 66%;
+  top:15%;
+  -webkit-transform: translateX(-50%);       
+}
+
+
+
+.terr-wrap:nth-child(5) {
+  left: initial;
+  right: 15%;
+}
+
+
+
+.button-wrap {
+  position:absolute;
+  bottom: 10px;
+  left: 30px;
+  display:none;
+}
+.button {
+  text-decoration: none;
+  padding: 12px 22px;
+  border: 1px solid #fff;
+  margin-left: 80px;
+  font-size: 8px;
+  color: #fff;
+}
+.button:hover {
+  cursor: pointer;
+  background: #333;
+  color: #FFF;
+  border:none;
+}
+
+.shrink .terr-wrap {
+  width: 100%;
+  /*bottom: initial;*/
+  top: 40%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+/*          transform: translateX(-50%) translateY(-50%);*/
+}
+
+
+.shrink .button-wrap,
+.shrink .context-menu {
+  display: block;
+}
